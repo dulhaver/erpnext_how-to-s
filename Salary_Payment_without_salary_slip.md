@@ -1,6 +1,3 @@
-# this is still a DRAFT!!
-
-
 ## Requirements
 
 - an `Employee`
@@ -21,6 +18,8 @@ A `Journal Entry` with two rows
 - __row 2__ Expense account:  Debit
 
 posting date is the date when the salary is due.
+
+**Attention here!**: In order to be able to select the Employee as PArty Type you need to open the details of the entry. By default the Party Type it is set to be `Supplier`
 
 #### 2. balancing the
 with an actual money transfer (Company > Employee #1)
