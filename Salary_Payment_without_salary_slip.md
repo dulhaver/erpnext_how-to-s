@@ -17,6 +17,17 @@ It takes 2 `Journal Entries` for this to work.
 
 A `Journal Entry` with two rows
 
-
 - __row 1__ Salaries Payable: Credit (Party: Employee #1)
 - __row 2__ Expense account:  Debit
+
+posting date is the date when the salary is due.
+
+#### 2. balancing the
+with an actual money transfer (Company > Employee #1)
+
+A `Journal Entry` with two rows
+
+- __row 1__ Salaries Payable: Debit (Party: Employee #1)
+- __row 2__ Company Bank Account:  Credit
+
+posting date is the date of the actual bank transfer (most likey on or after the posting date of `Journal Entry`  1
