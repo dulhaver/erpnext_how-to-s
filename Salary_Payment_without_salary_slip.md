@@ -30,3 +30,7 @@ A `Journal Entry` with two rows
 - __row 2__ Company Bank Account:  Credit
 
 posting date is the date of the actual bank transfer (most likey on or after the posting date of `Journal Entry`  1
+
+----
+
+tested on v11 on 2018-02-01
