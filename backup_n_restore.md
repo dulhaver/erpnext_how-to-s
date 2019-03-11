@@ -36,5 +36,6 @@ _(this can take a while to finish)_
 cd ~/frappe-bench
 bench --site [site_name] restore --with-public-files [/path/to/file.tar] --with-private-files [/path/to/file.tar] [/path/to/file.sql]
 ```
+_(that as well may take a while. You'll also have to provide the MySQL root password_
 
 
