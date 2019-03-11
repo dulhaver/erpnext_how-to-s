@@ -24,16 +24,18 @@ if you have an existing instance
 `DROP DATABASE [db_name];`
 _(this can take a while to finish)_
 
-4. log out from mysql
+4. check the database is gone with
+`SHOW DATABASES;`
+
+5. log out from mysql
 `exit`
 
-5. restore from sql file with files
+6. restore from sql file with files
 
 ```
 cd ~/frappe-bench
 bench mariadb
 bench --site [site_name] restore --with-public-files [/path/to/file.tar] --with-private-files [/path/to/file.tar] [/path/to/file.sql]
 ```
-
 
 
