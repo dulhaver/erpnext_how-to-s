@@ -38,4 +38,8 @@ bench --site [site_name] restore --with-public-files [/path/to/file.tar] --with-
 ```
 _(that as well may take a while. You'll also have to provide the MySQL root password_
 
+7. test whether it work by
+`bench mariadb`
+if you are being logged in to the database, at least the restore seems to have worked
+
 
