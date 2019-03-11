@@ -22,6 +22,7 @@ if you have an existing instance
 
 3. drop existing database
 `DROP DATABASE [db_name];`
+_(this can take a while to finish)_
 
 4. log out from mysql
 `exit`
