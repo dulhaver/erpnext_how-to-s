@@ -30,8 +30,11 @@ The Frappe system user in general should not be a `sudo` user so you'll have ano
 
 ```
 su - [sudo-user]
+cd /home/frappe/frappe-bench
 sudo bench setup lets-encrypt erp.mysite.org
 ```
+there will be a couple of question during the installation which you can all agree to.  
+One of them is subsribing to a newsletter for let's encrypt. That's the one you can not agree to if you wish.
 
 ---
 
