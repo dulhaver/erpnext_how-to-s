@@ -9,25 +9,18 @@ It won't work with just an IP address
 cd /home/frappe/frappe-bench
 bench config dns_multitenant on
 ```
-this is needed **even if** you only use a singel site
+this is needed **even if** you only use a single site
 
 ### 2. point your (sub)domain to the IP of your ERPNext server
 
 - this is an "A record" in the DNS settings of your server
 - test, wheter your ERPnext instance shows up under that domain (erp.mysite.org)
 
-### 3. 
+### 3. move your site
 
-mv /home/frappe/frappe-bench/sites/site1.local /home/frappe/frappe-bench/sites/erp.mydomain.com
+as frappe system user
 
-
-
-afte
-
-r renaming the site1.local folder you can run the bench command as
-
-sudo bench setup lets-encrypt erp.mydomain.com
-
+`mv /home/frappe/frappe-bench/sites/site1.local /home/frappe/frappe-bench/sites/erp.mysite.org`
 
 
 ### 3. apply the let's encrypt certificate
@@ -37,4 +30,12 @@ The Frappe system user in general should not be a `sudo` user so you'll have ano
 
 ```
 su - [sudo-user]
-sudo 
+sudo bench setup lets-encrypt erp.mysite.org
+```
+
+---
+
+#### Sources
+
+- [Multitenant-Setup](https://github.com/frappe/bench/wiki/Multitenant-Setup)
+- [Let's encrypt](https://discuss.erpnext.com/t/issue-setting-up-letsencrypt-ssl/21221/6)
