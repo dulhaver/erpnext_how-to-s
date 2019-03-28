@@ -1,7 +1,11 @@
 ### Pre-requisites
 
 - you need to have a domain (www.mysite.org) or subdomain (erp.mysite.org) in order to use let's encrypt. 
-- It won't work with just an IP address
+- It won't work with just an IP address  
+  
+
+
+---
 
 ### 1. setup DNS multitenancy
 
