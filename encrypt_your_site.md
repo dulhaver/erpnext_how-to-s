@@ -40,6 +40,13 @@ sudo bench setup lets-encrypt erp.mysite.org
 there will be a couple of question during the installation which you can all agree to.  
 One of them is subsribing to a newsletter for let's encrypt. That's the one you can not agree to if you wish.
 
+### 4. update `currentsite.txt`
+
+```
+vim ~/frappe/frappe-bench/sites/currensite.txt
+```
+replace **`site1.local`** with **`erp.mysite.org`**, otherwise i.e. the bench mariadb command will not work anymore because it is looking for `site1.local`.
+
 ---
 
 #### Sources
