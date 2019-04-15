@@ -3,7 +3,7 @@
 - an `Employee`
 - a `Payable account` for Salaries (i.e. _Salaries Payable_)
 - an `Expense account` for Salaries (i.e. _Admin Salaries_)
-`
+
 # Accounting Transactions
 
 It takes 2 `Journal Entries` for this to work. 
