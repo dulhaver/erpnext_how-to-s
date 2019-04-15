@@ -1,8 +1,8 @@
 # Requirements
 
 - an `Employee`
-- a `Payable account` for Salaries (like i.e. _Salaries Payable_)
-- an `Expense account` for Salaries (lilke i.e. _Admin Salaries_)
+- a `Payable account` for Salaries (i.e. _Salaries Payable_)
+- an `Expense account` for Salaries (i.e. _Admin Salaries_)
 `
 # Accounting Transactions
 
