@@ -14,8 +14,8 @@ It takes 2 `Journal Entries` for this to work.
 
 A `Journal Entry` with two rows
 
-- row 1 __Salaries Payable: Credit__ (Party: Employee #1)
-- row 2 __Expense account:  Debit__
+- row 1 __`Salaries Payable:` Credit__ (Party: Employee #1)
+- row 2 __`Expense account:`  Debit__
 
 posting date is the date when the salary is due.
 
@@ -26,8 +26,8 @@ with an actual money transfer (Company > Employee #1)
 
 A `Journal Entry` with two rows
 
-- row 1 __Salaries Payable: Debit__ (Party: Employee #1)
-- row 2 __Company Bank Account:  Credit__
+- row 1 __`Salaries Payable:` Debit__ (Party: Employee #1)
+- row 2 __`Company Bank Account:`  Credit__
 
 posting date is the date of the actual bank transfer (most likey on or after the posting date of `Journal Entry`  1
 
