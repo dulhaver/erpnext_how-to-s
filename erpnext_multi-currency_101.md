@@ -13,3 +13,8 @@
 
 #### Salary Slip ??
 (tbc)
+
+
+#### Payment Entry
+
+`Deduction/Loss` does **not** accept non-default currency account, even if the entire transaction happens in (the same) non-default currency
