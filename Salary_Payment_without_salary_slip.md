@@ -26,7 +26,7 @@ with an actual money transfer (Company > Employee #1)
 
 A `Journal Entry` with two rows
 
-- row 1 __`Salaries Payable:` Debit__ (Party: Employee #1)
+- row 1 __`Salaries Payable:` Debit__ (Party: Employee #1) with reference to JE above
 - row 2 __`Company Bank Account:`  Credit__
 
 posting date is the date of the actual bank transfer (most likey on or after the posting date of `Journal Entry`  1
