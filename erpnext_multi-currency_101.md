@@ -10,6 +10,9 @@
 
 #### Expense Claim
 
+#### Employee Advance
+- can only be made in default currency
+
 
 #### Salary Slip ??
 (tbc)
