@@ -8,4 +8,6 @@ line 1    |  Payable account of PINV            | Supplier (against PINV)       
 line 2    |  Payable account employee expenses  | Employee (against Expense Claim) |  Credit  |  
 ```
 
-this markes the PINV as paid and creates a liability against the Employee which can be tracked via the `General Ledger`
+the above markes the PINV as paid and creates a liability against the Employee which can be tracked via the `General Ledger`
+
+This works fine in default currency. I assume we will end up in multi-currency hell once we try to use non-default currencies.
