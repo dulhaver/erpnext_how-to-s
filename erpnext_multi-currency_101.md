@@ -6,7 +6,8 @@
 - PE "charges and fees"
 - Membership (Non Profit Domain)
 - Loan
-- tbc ...
+- Opening Invoice Creation Tool
+- (to be continued)
 
 ---
 
@@ -32,3 +33,7 @@
 
 #### Loan
 - The Loan doctype is also not having currency and so loans can only be disbursed and recovered in single currency. It also means that loan recovery amount changes every month from salary slip.
+
+
+#### Opening Invoice Creation Tool
+- only allows transactions in the default currency. If any of your customers or suppliers uses another currency, u can not use that tool to create an opening balance
