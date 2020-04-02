@@ -7,6 +7,7 @@
 - Membership (Non Profit Domain)
 - Loan
 - Opening Invoice Creation Tool
+- return payments with Journel Entry
 - (to be continued)
 
 ---
@@ -37,3 +38,6 @@
 
 #### Opening Invoice Creation Tool
 - only allows transactions in the default currency. If any of your customers or suppliers uses another currency, u can not use that tool to create an opening balance
+
+#### Return payments with Journal Entry
+if you have an Invoice with an attached Payment Entry and the payment is being returned you can make the Invoice unpaid with a Journal Entry and then balace it anew with a second payment entry. However when any of the components (Invoice, Payment) is in any non-default currency the second payment requires an Difference Ammount which is out of any proportion  https://discuss.erpnext.com/t/how-to-account-for-returned-payment-to-a-supplier/52891/6?u=vrms
