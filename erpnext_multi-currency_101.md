@@ -1,4 +1,6 @@
-### transactions/Doctypes that are not multi-currency ready yet in ERPNext
+### Issues with multi-currency transactions in ERPNext
+
+> All this is detected in a version-11 instance I am running. I believe much (if not all) still is existant in v12/v13
 
 - Expense Claim
 - Liability transactions where a `Party` is an **Employee** (like Jounral Entry to a Payable account with Party=Enployee)
