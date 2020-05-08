@@ -3,14 +3,14 @@
 > All this is detected in a version-11 instance I am running. I believe much (if not all) still is existant in v12/v13
 
 - Expense Claim
-- Liability transactions where a `Party` is an **Employee** (like Jounral Entry to a Payable account with Party=Enployee)
+- Liability transactions where a `Party` is an **Employee** (like Journal Entry to a Payable account with Party=Employee)
 - Payroll/Salary Slip
-- PE "charges and fees"
+- **Exchange Rate** in `Payment Entry`, `Journal Entry`, `Sales/Purchase Invoice/Order`
+- **Payment Entry** "charges and fees"
 - Membership (Non Profit Domain)
 - Loan
 - Opening Invoice Creation Tool
 - return payments with Journal Entry
-- Payment Entry grabs the exchange rate from the date the transaction is entered into ERPNext, **not the transaction date**. This creates wrong "Difference Amount" value. https://github.com/frappe/erpnext/issues/21473
 - (to be continued)
 
 ---
@@ -29,8 +29,11 @@
 
 
 #### Payment Entry
+- `Deduction/Loss` does **not** accept non-default currency account, even if the entire transaction happens in (the same) non-default currency
 
-`Deduction/Loss` does **not** accept non-default currency account, even if the entire transaction happens in (the same) non-default currency
+#### Exchange Rate
+- `Payment Entry`, `Journal Entry`, `Sales/Purchase Invoice/Order` grab the `exchange rate` from the date the transaction is entered into ERPNext, **not the transaction date**. This creates wrong "Difference Amount" value. https://github.com/frappe/erpnext/issues/21473.  
+For Purchase Invoices the rate should be grabbed 1st from the `Supplier Invoice Date` and (if that was empty) from the `posting_date` I'd say.
 
 #### Membership 
 - The membership doctype is not having currency and so memberships can only be provided in single currency.
@@ -44,4 +47,3 @@
 
 #### Return payments with Journal Entry
 if you have an Invoice with an attached Payment Entry and the payment is being returned (due to some error with the bank transaction i.e.) you can make the Invoice unpaid with a Journal Entry and then balance it anew with a second payment entry. However when any of the components (Invoice, Payment) is in any non-default currency the second payment requires a Difference Ammount which is out of any proportion  https://discuss.erpnext.com/t/how-to-account-for-returned-payment-to-a-supplier/52891/6?u=vrms
-
